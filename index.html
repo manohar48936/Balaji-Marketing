@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BALAJI MARKETING | Interior Design & Branding Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1a365d',
+                        secondary: '#e2b979',
+                        accent: '#2c5282',
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-in-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(30px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+
+    
+</head>
+<body class="font-sans text-gray-800 bg-white">
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-md z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="images/balaji-logo.png" alt="Bhalaji Logo" class="h-10 w-auto" />
+                <a href="#" class="text-2xl font-bold text-primary">
+                   BHALAJI <span class="text-secondary">MARKETING</span>
+                </a>
+            </div>
+
+            
+            <nav class=" hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-700 hover:text-secondary transition">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-secondary transition">About</a>
+                <a href="#expertise" class="text-gray-700 hover:text-secondary transition">Expertise</a>
+                <a href="#projects" class="text-gray-700 hover:text-secondary transition">Projects</a>
+                <a href="#contact" class="text-gray-700 hover:text-secondary transition">Contact</a>
+            </nav>
+            
+            <a href="#contact" class="hidden md:block bg-primary text-white px-6 py-2 rounded-full hover:bg-accent transition duration-300 font-medium">
+                Get In Touch
+            </a>
+            
+            <button class="md:hidden focus:outline-none" id="menu-btn">
+                <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white w-full px-6 py-4 shadow-lg" id="mobile-menu">
+            <div class="flex flex-col space-y-4">
+                <a href="#home" class="text-gray-700 hover:text-secondary transition">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-secondary transition">About</a>
+                <a href="#expertise" class="text-gray-700 hover:text-secondary transition">Expertise</a>
+                <a href="#projects" class="text-gray-700 hover:text-secondary transition">Projects</a>
+                <a href="#contact" class="text-gray-700 hover:text-secondary transition">Contact</a>
+                <a href="#contact" class="bg-primary text-white px-6 py-2 rounded-full hover:bg-accent transition duration-300 font-medium text-center">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-screen flex items-center justify-center text-white pt-20">
+        <div class="container mx-auto px-6 text-center animate-on-scroll">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">We Bring Spaces to Life Visually</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto animate-fade-in">Innovative Interiors, Graphics & Branding Solutions</p>
+            <a href="#projects" class="bg-secondary text-primary px-8 py-3 rounded-full font-bold hover:bg-white transition duration-300 inline-block animate-slide-up">
+                Explore Our Work
+            </a>
+            <div class="mt-20 scroll-down">
+                <a href="#about" class="text-white">
+                    <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10 animate-on-scroll">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">COMPANY PROFILE</h2>
+                    <p class="text-gray-600 mb-4 text-lg font-medium">WE PROVIDE COMPLETE SOLUTIONS FOR INTERIORS AND EXTERIORS PRODUCTS & SERVICES TO END CUSTOMERS AND DIRECT CLIENTS.</p>
+                    <p class="text-gray-600 mb-4">We deal with 3M Matting products, Frosted Film, Suncontrol Film, Graphics, Venetian Blinds, Housekeeping products like Dust Bins, Hand Dryer, Tissue Paper, Antiskid Tapes, Radium Tapes, Lane Marking Tapes and Reflective Tapes.</p>
+                    <p class="text-gray-600 mb-4">We service major clients including Dr. Reddy's Labs, MyLan Labs, Aurobindo Pharma Company, DE Shaw Software, LTI Mindtree, Wipro Technologies, Virtusa Software Company, Amazon Campus, My Home Group of Companies, and Phoenix Builders.</p>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-lg mb-6 transform transition hover:scale-105 duration-300">
+                        <h3 class="text-xl font-bold text-primary mb-3">Our Product Range:</h3>
+                        <ul class="grid grid-cols-2 gap-2 text-gray-600">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-secondary mr-2"></i> 3M Matting</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-secondary mr-2"></i> Frosted Film</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-secondary mr-2"></i> Suncontrol Film</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-secondary mr-2"></i> Graphics</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-secondary mr-2"></i> Venetian Blinds</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-secondary mr-2"></i> Housekeeping Products</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-secondary mr-2"></i> Wodden Flooring</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-secondary mr-2"></i> Hand Dryers</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-secondary mr-2"></i> Tissue Paper</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-secondary mr-2"></i> Antiskid Tapes</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-secondary mr-2"></i> Radium Tapes</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-secondary mr-2"></i> Lane Marking Tapes</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg mb-6 transform transition hover:scale-105 duration-300">
+                        <h3 class="text-xl font-bold text-primary mb-3">DEALING SIGNAGES</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-600">
+                            <ul class="space-y-2">
+                                <li>1. Way Finding Signages</li>
+                                <li>2. Internal Meeting Room Signages</li>
+                                <li>3. External Signages</li>
+                                <li>4. Push Pull Signages</li>
+                                <li>5. Floor Indication Signages</li>
+                                <li>6. Lift Indication Signages</li>
+                            </ul>
+                            <ul class="space-y-2">
+                                <li>7. Parking Signages (LIT / Without LIT)</li>
+                                <li>8. Foam Board Signages</li>
+                                <li>9. Acrylic Signages (Box Type)</li>
+                                <li>10. Foam Board Signages for BMS Room Names</li>
+                                <li>11. Shafts Signages</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg mb-6 transform transition hover:scale-105 duration-300">
+                        <h3 class="text-xl font-bold text-primary mb-3">MAJOR PROJECTS</h3>
+                        <p class="text-gray-600 mb-2">We have successfully completed projects for:</p>
+                        <ul class="text-gray-600 columns-2">
+                            <li>Phoenix Builders</li>
+                            <li>Micron UBS Bank</li>
+                            <li>We Work Signages</li>
+                            <li>Dupont</li>
+                            <li>Google Phoenix</li>
+                            <li>EFS Ashok Bhoopal Chambers</li>
+                            <li>Taj Krishna Hotel</li>
+                            <li>Star Hospitals</li>
+                            <li>Apollo Hospitals</li>
+                            <li>Verizon</li>
+                            <li>HSBC Banks</li>
+                            <li>ICICI Bank Ltd</li>
+                            <li>Ashok Builders</li>
+                            <li>K Raheja IT Park</li>
+                            <li>Qualcomm Software</li>
+                            <li>Westin Hotels</li>
+                            <li>Park Hotels</li>
+                            <li>Times of India Corporate Office</li>
+                        </ul>
+                    </div>
+
+                    <a href="#contact" class="bg-primary text-white px-6 py-3 rounded-full hover:bg-accent transition duration-300 font-medium inline-block transform hover:scale-105">
+                        Contact Us for More Details
+                    </a>
+                </div>
+                
+                <div class="lg:w-1/2 animate-on-scroll">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="rounded-lg overflow-hidden shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Our Team" class="w-full h-full object-cover">
+                        </div>
+                        <div class="rounded-lg overflow-hidden shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Our Workspace" class="w-full h-full object-cover">
+                        </div>
+                        <div class="col-span-2 rounded-lg overflow-hidden shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Our Project" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Our Expertise</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We specialize in transforming spaces through innovative design solutions and premium materials</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 animate-on-scroll">
+                <!-- Expertise Item 1 -->
+                <div class="expertise-card bg-gray-50 p-6 rounded-lg transition duration-300 hover:shadow-xl">
+                    <div class="text-secondary text-4xl mb-4">
+                        <i class="fas fa-paint-roller"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Wall Graphics</h3>
+                    <p class="text-gray-600">Transform blank walls into stunning visual narratives with our premium wall graphics solutions.</p>
+                </div>
+                
+                <!-- Expertise Item 2 -->
+                <div class="expertise-card bg-gray-50 p-6 rounded-lg transition duration-300 hover:shadow-xl">
+                    <div class="text-secondary text-4xl mb-4">
+                        <i class="fas fa-window-maximize"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Glass Graphics</h3>
+                    <p class="text-gray-600">Enhance transparency with style using our innovative glass graphics applications.</p>
+                </div>
+                
+                <!-- Expertise Item 3 -->
+                <div class="expertise-card bg-gray-50 p-6 rounded-lg transition duration-300 hover:shadow-xl">
+                    <div class="text-secondary text-4xl mb-4">
+                        <i class="fas fa-border-style"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Floor Graphics</h3>
+                    <p class="text-gray-600">Create engaging pathways and interactive floor spaces with our durable floor graphics.</p>
+                </div>
+                
+                <!-- Expertise Item 4 -->
+                <div class="expertise-card bg-gray-50 p-6 rounded-lg transition duration-300 hover:shadow-xl">
+                    <div class="text-secondary text-4xl mb-4">
+                        <i class="fas fa-spray-can"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Graffiti Art</h3>
+                    <p class="text-gray-600">Urban-inspired artistic expressions that bring energy and creativity to any space.</p>
+                </div>
+                
+                <!-- Expertise Item 5 -->
+                <div class="expertise-card bg-gray-50 p-6 rounded-lg transition duration-300 hover:shadow-xl">
+                    <div class="text-secondary text-4xl mb-4">
+                        <i class="fas fa-cubes"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">3D Sculptures</h3>
+                    <p class="text-gray-600">Dimensional artworks that create focal points and enhance spatial experiences.</p>
+                </div>
+                
+                <!-- Expertise Item 6 -->
+                <div class="expertise-card bg-gray-50 p-6 rounded-lg transition duration-300 hover:shadow-xl">
+                    <div class="text-secondary text-4xl mb-4">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">wall Graphics</h3>
+                    <p class="text-gray-600">Comprehensive wayfinding and wall branding solutions for cohesive spaces.</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center animate-on-scroll">
+                <a href="#contact" class="bg-primary text-white px-8 py-3 rounded-full font-bold hover:bg-accent transition duration-300 inline-block">
+                    View All Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Showcase of Our Work</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Explore our portfolio of innovative design solutions across various categories</p>
+            </div>
+            
+            <div class="mb-8 flex flex-wrap justify-center gap-4 animate-on-scroll">
+            <button data-category="all" class="filter-btn px-4 py-2 bg-primary text-white rounded-full">All Projects</button>
+            <button data-category="wall" class="filter-btn px-4 py-2 bg-white text-primary rounded-full hover:bg-gray-200">Wall Graphics</button>
+            <button data-category="Interactive" class="filter-btn px-4 py-2 bg-white text-primary rounded-full hover:bg-gray-200">Interactive Walls</button>
+            <button data-category="glass" class="filter-btn px-4 py-2 bg-white text-primary rounded-full hover:bg-gray-200">Glass Graphics</button>
+            <button data-category="floor" class="filter-btn px-4 py-2 bg-white text-primary rounded-full hover:bg-gray-200">Floor Graphics</button>
+            <button data-category="graft" class="filter-btn px-4 py-2 bg-white text-primary rounded-full hover:bg-gray-200">Graffiti Art</button>
+            <button data-category="egd" class="filter-btn px-4 py-2 bg-white text-primary rounded-full hover:bg-gray-200">EGD Design</button>
+            <button data-category="sun" class="filter-btn px-4 py-2 bg-white text-primary rounded-full hover:bg-gray-200">Sun & Safety Flim</button>
+            <button data-category="3m" class="filter-btn px-4 py-2 bg-white text-primary rounded-full hover:bg-gray-200">3M Fasara</button>
+            <button data-category="3md" class="filter-btn px-4 py-2 bg-white text-primary rounded-full hover:bg-gray-200">3M Di Noc</button>
+            <button data-category="matting" class="filter-btn px-4 py-2 bg-white text-primary rounded-full hover:bg-gray-200">Floor Matting</button>
+            <button data-category="write" class="filter-btn px-4 py-2 bg-white text-primary rounded-full hover:bg-gray-200">Writable & Projection flim</button>
+            <button data-category="Signage" class="filter-btn px-4 py-2 bg-white text-primary rounded-full hover:bg-gray-200">Signage Design</button>
+            <button data-category="External" class="filter-btn px-4 py-2 bg-white text-primary rounded-full hover:bg-gray-200">External Signage</button>
+            <button data-category="Way" class="filter-btn px-4 py-2 bg-white text-primary rounded-full hover:bg-gray-200">Way Finding Signages</button>
+            <button data-category="Logo" class="filter-btn px-4 py-2 bg-white text-primary rounded-full hover:bg-gray-200">Internal Logo</button>
+            <button data-category="Pylon" class="filter-btn px-4 py-2 bg-white text-primary rounded-full hover:bg-gray-200">Pylon Signages</button>
+            <button data-category="Internal" class="filter-btn px-4 py-2 bg-white text-primary rounded-full hover:bg-gray-200">Internal Signages</button>
+            <button data-category="3d" class="filter-btn px-4 py-2 bg-white text-primary rounded-full hover:bg-gray-200">3D Sculptures</button>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-on-scroll">
+                <!-- Project 1 -->
+                <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="1egd">
+                    <img src="images/ego1.png" alt="Project 1" class="w-full h-64 object-cover">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                        <h3 class="text-white text-xl font-bold mb-2">Corporate Office Branding</h3>
+                        <p class="text-gray-300 text-center mb-4">Complete wall graphics for a multinational corporation</p>
+                        <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="1Interactive">
+                    <img src="images/int1.jpg">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                        <h3 class="text-white text-xl font-bold mb-2">Retail Space Graphics</h3>
+                        <p class="text-gray-300 text-center mb-4">Interactive graphics for a premium retail brand</p>
+                        <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="1glass">
+                    <img src="images/gla2.png">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                        <h3 class="text-white text-xl font-bold mb-2">Hospital Wayfinding</h3>
+                        <p class="text-gray-300 text-center mb-4">Comprehensive signage system for a healthcare facility</p>
+                        <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="1floor">
+                    <img src="images/flo1.jpg">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                        <h3 class="text-white text-xl font-bold mb-2">Educational Institution Branding</h3>
+                        <p class="text-gray-300 text-center mb-4">wall graphics for a university campus</p>
+                        <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="1graft">
+                    <img src="images/gra1.jpg">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                        <h3 class="text-white text-xl font-bold mb-2">3D Sculpture Installation</h3>
+                        <p class="text-gray-300 text-center mb-4">Large-scale art installation for a public space</p>
+                        <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="13d">
+                    <img src="images/3d1.jpg">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                        <h3 class="text-white text-xl font-bold mb-2">Hotel Interior Branding</h3>
+                        <p class="text-gray-300 text-center mb-4">Luxury branding elements for a 5-star hotel</p>
+                        <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden-projects hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+            <!-- Project 7 -->
+            <div class="project-card hidden relative rounded-lg overflow-hidden shadow-lg" data-category="1sun">
+        <       <img src="images/flo1.jpg" alt="Project 7" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                <h3 class="text-white text-xl font-bold mb-2">Sun Control Film</h3>
+                <p class="text-gray-300 text-center mb-4">Sun safety film installation for energy efficiency</p>
+                <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="egd">
+                    <img src="images/ego2.png" alt="Project 1" class="w-full h-64 object-cover">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                        <h3 class="text-white text-xl font-bold mb-2">Corporate Office Branding</h3>
+                        <p class="text-gray-300 text-center mb-4">Complete wall graphics for a multinational corporation</p>
+                        <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                    </div>
+            </div>
+
+            
+
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="egd">
+                    <img src="images/ego3.png" alt="Project 1" class="w-full h-64 object-cover">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                        <h3 class="text-white text-xl font-bold mb-2">Corporate Office Branding</h3>
+                        <p class="text-gray-300 text-center mb-4">Complete wall graphics for a multinational corporation</p>
+                        <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                    </div>
+            </div>
+
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="egd">
+                    <img src="images/ego1.png" alt="Project 1" class="w-full h-64 object-cover">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                        <h3 class="text-white text-xl font-bold mb-2">Corporate Office Branding</h3>
+                        <p class="text-gray-300 text-center mb-4">Complete wall graphics for a multinational corporation</p>
+                        <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                    </div>
+            </div>
+
+            
+            <!-- Project 8 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="glass">
+                <img src="images/gla2.png" alt="Project 8" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="glass">
+                <img src="images/gla1.png" alt="Project 8" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 9 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="glass">
+                <img src="images/gla5.png" alt="Project 9" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 10 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="glass">
+                <img src="images/gla3.png" alt="Project 10" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 11 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="glass">
+                <img src="images/gla4.png" alt="Project 11" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+            
+            <!-- Project 8 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="3d">
+                <img src="images/3d1.jpg" alt="Project 8" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 9 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="3d">
+                <img src="images/3d3.jpg" alt="Project 9" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 10 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="3d">
+                <img src="images/3d2.jpg" alt="Project 10" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 11 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="3d">
+                <img src="images/3d4.jpg" alt="Project 11" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+            
+            <!-- Project 8 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="Interactive">
+                <img src="images/int1.jpg" alt="Project 8" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 9 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="Interactive">
+                <img src="images/int3.jpg" alt="Project 9" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 10 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="Interactive">
+                <img src="images/int4.jpg" alt="Project 10" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 11 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="Interactive">
+                <img src="images/int5.jpg" alt="Project 11" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 8 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="write">
+                <img src="images/wri1.jpg" alt="Project 8" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 9 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="write">
+                <img src="images/wri2.jpg" alt="Project 9" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 10 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="write">
+                <img src="images/wri3.jpg" alt="Project 10" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 11 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="write">
+                <img src="images/wri4.jpg" alt="Project 11" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+
+            <!-- Project 8 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="matting">
+                <img src="images/mat1.jpg" alt="Project 8" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 9 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="matting">
+                <img src="images/mat2.jpg" alt="Project 9" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 10 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="matting">
+                <img src="images/mat3.jpg" alt="Project 10" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 11 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="matting">
+                <img src="images/mat4.jpg" alt="Project 11" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+
+            <!-- Project 8 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="External">
+                <img src="images/ex1.jpg" alt="Project 8" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 9 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="External">
+                <img src="images/ex4.jpg" alt="Project 9" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 10 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="External">
+                <img src="images/ex3.jpg" alt="Project 10" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            
+
+
+            <!-- Project 8 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="Signage">
+                <img src="images/des1.jpg" alt="Project 8" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 9 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="Signage">
+                <img src="images/des2.jpg" alt="Project 9" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 10 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="Signage">
+                <img src="images/des3.jpg" alt="Project 10" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 11 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="Signage">
+                <img src="images/des4.jpg" alt="Project 11" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+            
+
+
+            <!-- Project 8 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="3md">
+                <img src="images/3md4.jpg" alt="Project 8" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 9 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="3md">
+                <img src="images/3md3.jpg" alt="Project 9" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 10 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="3md">
+                <img src="images/3md1.jpg" alt="Project 10" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 11 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="3md">
+                <img src="images/3md2.jpg" alt="Project 11" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+            
+            
+            <!-- Project 8 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="Way">
+                <img src="images/way1.jpg" alt="Project 8" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 9 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="Way">
+                <img src="images/way2.jpg" alt="Project 9" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 10 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="Way">
+                <img src="images/way3.jpg" alt="Project 10" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+
+            
+
+            <!-- Project 8 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="Logo">
+                <img src="images/logo1.jpg" alt="Project 8" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 9 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="Logo">
+                <img src="images/logo2.jpg" alt="Project 9" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 10 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="Logo">
+                <img src="images/logo3.jpg" alt="Project 10" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 11 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="Logo">
+                <img src="images/logo4.jpg" alt="Project 11" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+            
+
+            <!-- Project 8 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="Internal">
+                <img src="images/sig1.jpg" alt="Project 8" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 9 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="Internal">
+                <img src="images/sig2.jpg" alt="Project 9" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 10 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="Internal">
+                <img src="images/sig3.jpg" alt="Project 10" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 11 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="Internal">
+                <img src="images/sig4.jpg" alt="Project 11" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 8 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="Pylon">
+                <img src="images/pic1.jpg" alt="Project 8" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 9 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="Pylon">
+                <img src="images/pic2.jpg" alt="Project 9" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 10 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="Pylon">
+                <img src="images/pic3.jpg" alt="Project 10" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            
+
+
+            <!-- Project 9 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="3m">
+                <img src="images/3m3.jpg" alt="Project 9" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 10 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="3m">
+                <img src="images/3m1.jpg" alt="Project 10" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 11 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="3m">
+                <img src="images/3m2.jpg" alt="Project 11" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+
+            <!-- Project 8 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="graft">
+                <img src="images/gra1.jpg" alt="Project 8" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 9 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="graft">
+                <img src="images/gra2.jpg" alt="Project 9" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 10 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="graft">
+                <img src="images/gra3.png" alt="Project 10" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 8 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="sun">
+                <img src="images/sun1.jpg" alt="Project 8" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 10 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="sun">
+                <img src="images/sun3.jpg" alt="Project 10" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 11 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="sun">
+                <img src="images/sun4.png" alt="Project 11" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+            
+
+            <!-- Project 8 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="floor">
+                <img src="images/flo1.jpg" alt="Project 8" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 9 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="floor">
+                <img src="images/flo2.png" alt="Project 9" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 10 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="floor">
+                <img src="images/flo3.png" alt="Project 10" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 11 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="floor">
+                <img src="images/flo4.png" alt="Project 11" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+
+            <!-- Project 8 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="wall">
+                <img src="images/wall1.jpg" alt="Project 8" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 9 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="wall">
+                <img src="images/walll2.jpg" alt="Project 9" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 10 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="wall">
+                <img src="images/wall3.png" alt="Project 10" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 11 -->
+            <div class="project-card relative rounded-lg overflow-hidden shadow-lg" data-category="wall">
+                <img src="images/wall4.png" alt="Project 11" class="w-full h-64 object-cover">
+                <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">3M Di-Noc Application</h3>
+                    <p class="text-gray-300 text-center mb-4">Premium architectural film applied to interiors</p>
+                    <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium">View Details</a>
+                </div>
+            </div>
+    
+
+    <!-- Add as many as needed -->
+</div>
+
+            
+            <div class="mt-12 text-center animate-on-scroll">
+                <a id="view-more-btn" href="javascript:void(0);" class="bg-primary text-white px-8 py-3 rounded-full font-bold hover:bg-accent transition duration-300 inline-block mr-4">
+                    View More Projects
+                </a>
+
+                <a id="load-more-btn" href="javascript:void(0);" class="bg-primary text-white px-8 py-3 rounded-full font-bold hover:bg-accent transition duration-300 inline-block">
+                    Load More Projects
+                </a>
+
+
+                <a href="#contact" class="bg-secondary text-primary px-8 py-3 rounded-full font-bold hover:bg-white transition duration-300 inline-block">
+                    Book Consultation
+                </a>
+            </div>
+
+            
+        </div>
+
+            
+    </section>
+
+    
+    
+
+    
+
+    <!-- Partners Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 animate-on-scroll">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Our Trusted Partners</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We collaborate with industry leaders to deliver premium solutions</p>
+            </div>
+            
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 animate-on-scroll">
+                <img src="images/3M-LOGO.png" alt="3M" class="h-12 opacity-70 hover:opacity-100 transition">
+                <img src="images/euronics-logo.png" alt="EURONICS" class="h-20 opacity-70 hover:opacity-100 transition">
+                <img src="images/filmoplogo.png" alt="FLIMOP" class="h-16 opacity-70 hover:opacity-100 transition">
+                <img src="images/duro.png.png" alt="DUROSOFT" class="h-12 opacity-70 hover:opacity-100 transition">
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- CTA Section -->
+    <section class="py-20 bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1400&q=80');">
+        <div class="container mx-auto px-6 text-center text-white animate-on-scroll">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Let's Create Something Timeless & Impactful Together</h2>
+            <p class="text-xl mb-10 max-w-2xl mx-auto">Our team is ready to transform your space with innovative design solutions tailored to your needs.</p>
+            <a href="#contact" class="bg-secondary text-primary px-8 py-3 rounded-full font-bold hover:bg-white transition duration-300 inline-block">
+                Schedule a Consultation
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row">
+                <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10 animate-on-scroll">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Get In Touch</h2>
+                    <p class="text-gray-600 mb-8">Have a project in mind or want to learn more about our services? Reach out to our team and we'll get back to you promptly.</p>
+                    
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold text-primary mb-4">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="text-secondary text-xl mr-4 mt-1">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                            <div class="space-y-1">
+                                <p class="font-medium">BALAJI MARKETING</p>
+                                <p class="text-gray-600">A-block 208, May Flower Park Apartments</p>
+                                <p class="text-gray-600">Mallapur, Hyderabad, 500076</p>
+                                <a href="https://maps.app.goo.gl/8rLQ83sSJ1wQK1dTA" target="_blank" rel="noopener noreferrer" class="text-primary font-bold hover:underline">
+                                    View on Google Maps
+                                </a>
+                            </div>      
+
+
+                            </div>
+                            <div class="flex items-center">
+                                <div class="text-secondary text-xl mr-4">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                            <div>
+                                <a href="tel:+917993403724" class="text-gray-600 hover:text-primary">
+                                    +91 7993403724
+                                </a>
+                            </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="text-secondary text-xl mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                            <div>
+                                <a href="mailto:sureshseelamantula@gmail.com" class="text-gray-600 hover:text-primary">
+                                    sureshseelamantula@gmail.com
+                                </a>
+                            </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- <div>
+                        <h3 class="text-xl font-bold text-primary mb-4">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-primary hover:text-secondary text-2xl">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="text-primary hover:text-secondary text-2xl">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-primary hover:text-secondary text-2xl">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+                
+                <div class="lg:w-1/2 animate-on-scroll">
+                    <form class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent">
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent">
+                        </div>
+                        <div class="mb-6">
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-white px-6 py-3 rounded-lg font-bold hover:bg-accent transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+<!-- Map Section -->
+<div class="h-96 w-full animate-on-scroll">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.358383950344!2d78.56565042462819!3d17.442552701214645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9c07c7f0490d%3A0x61b50e582c62c9e0!2sMAYFLOWER%20PARK%2C%20Mallapur%2C%20Secunderabad%2C%20Telangana%20500076!5e0!3m2!1sen!2sin!4v1752661516566!5m2!1sen!2sin" 
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+
+
+
+    <!-- Floating Contact Button -->
+    <div class="fixed bottom-8 right-8 z-40 animate-bounce">
+        <a href="#contact" class="bg-secondary text-primary flex items-center justify-center w-16 h-16 rounded-full shadow-xl hover:bg-white transition-all duration-300">
+            <i class="fas fa-envelope text-2xl"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <a href="#" class="text-2xl font-bold text-white mb-4 inline-block">BALAJI <span class="text-secondary">MARKETING</span></a>
+                    <p class="text-gray-300 max-w-xs">Designing Spaces with Passion and Precision since 2024.</p>
+                </div>
+                
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-300 hover:text-secondary transition">Home</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-secondary transition">About</a></li>
+                        <li><a href="#expertise" class="text-gray-300 hover:text-secondary transition">Expertise</a></li>
+                        <li><a href="#projects" class="text-gray-300 hover:text-secondary transition">Projects</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-secondary transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-lg font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-secondary transition">Wall Graphics</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-secondary transition">wall Graphics</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-secondary transition">3D Sculptures</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-secondary transition">Signage Solutions</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-secondary transition">Glass Graphics</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-secondary transition">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-secondary transition">Terms of Service</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>© 2025 BALAJI MARKETING. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-90 p-4">
+        <div class="relative max-w-4xl w-full">
+            <button id="closeModal" class="absolute -top-10 right-0 text-white text-3xl hover:text-secondary">&times;</button>
+            <img id="modalImage" src="" alt="" class="w-full h-auto max-h-screen object-contain">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+</body>
+<script src="script.js"></script>
+</html>
